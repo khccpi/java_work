@@ -1,0 +1,31 @@
+
+public class Identifier {
+
+	public static void main(String[] args) {
+
+		//꼭 지켜야 할 규칙 (안지킬 시 에러가 발생할 수 있습니다.)
+		//1. 식별자의 이름은 중복을 허용하지 않습니다.
+		//2. 대소문자를 철저하게 구분합니다.
+		
+		int age = 35;
+		//int age = 40; (X, 중복 불가)
+		int Age = 40;
+		System.out.println(age);
+		System.out.println(Age);
+		
+		//3. 식별자 이름은 숫자로만 지정하거나 숫자로 시작하면 안됩니다.
+		//int 700 = 365; (X, 변수 잘못 지정)
+		//int 7number = 7; (X, 숫자로 시작하는 변수 잘못 지정)
+		int number7 = 7;
+		System.out.println(number7);
+		int num7ber = 8;
+		System.out.println(num7ber);
+		
+		//4. 식별자 이름에 공백을 포함할 수 없다.
+		//int my birth day = 19921013; (X, 공백 제거해야 함)
+		int myBirthDay = 19921013;
+		System.out.println(num7ber);
+	
+	}
+
+}
