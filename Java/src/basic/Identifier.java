@@ -1,3 +1,4 @@
+package basic;
 
 public class Identifier {
 
@@ -24,22 +25,23 @@ public class Identifier {
 		//4. 식별자 이름에 공백을 포함할 수 없다.
 		//int my birth day = 19921013; (X, 공백 제거해야 함)
 		int myBirthDay = 19921013;
-		System.out.println(myBirthDay);
+		System.out.println(myBirthDay); //camel case
 	
 		//5. 식별자 이름에 쓸 수 있는 특수문자는 밑줄(_), 달러기호($)뿐이다. 하지만 사용을 권장하지 않는다.
-		//저 특수문자들은 사용하기로 약속한 곳이 지정되어 있습니다.
+		//저 특수문자들은 이미 사용하기로 약속한 곳이 지정되어 있습니다.
 		String $hello_ = "안녕";
 		
 		//6. 키워드(예약어)는 식별자 이름으로 사용이 불가능합니다. 키워드는 이미 어떠한 기능을 내포하고 있는 지정 문자입니다.
-		//String class = "클래스"; (X, 공백 제거해야 함)
-		//String Class = "클래스"; (O, 권장하지 않습니다.)
-		//String ClassName = "클래스"; (O, 권장하지 않습니다.)
+		//String class = "클래스"; (X, 예약어)
+		String Class = "클래스"; //(O, 권장하지 않습니다.)
+		String className = "클래스";
 		
 		//7. 한글이나 한자 같은 식별자 이름도 지정이 가능하다. 하지만 권장하지 않는다.
 		int 숫자 = 10;
 		String 名 = "홍길동";
 		System.out.println(숫자);
 		System.out.println(名);
+		
 	}
 
 }

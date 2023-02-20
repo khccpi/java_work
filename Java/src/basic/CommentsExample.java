@@ -1,3 +1,4 @@
+package basic;
 /**
  * 문서 생성용 주석입니다
  * 배포용 문서에 설명을 달아놓을 때 사용합니다
@@ -23,6 +24,7 @@ public class CommentsExample {
 		
 		System.out.println("안녕하세요~");
 		System.out.println("반갑습니다~");
+		
 	}
 
 }

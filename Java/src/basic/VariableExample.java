@@ -1,3 +1,4 @@
+package basic;
 
 public class VariableExample {
 
@@ -46,5 +47,6 @@ public class VariableExample {
 		//int result = myScore + num; (X, num이 선언되지 않음)
 		//int result;
 		//System.out.println(result); (X, result가 초기화되지 않음)
+		
 	}
 }
