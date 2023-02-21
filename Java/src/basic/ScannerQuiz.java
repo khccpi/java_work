@@ -30,8 +30,10 @@ public class ScannerQuiz {
 		System.out.println("이름 : " + name);
 		System.out.println("나이 : " + age + "세");
 		System.out.println("출생년도 : " + year + "년");
-		
+
 		System.out.println("--------------------------------------------------------------------------------");
-		System.out.printf("이름 : %s\n나이 : %d세\n출생년도 : %d년",name,age,year);
+		System.out.printf("이름 : %s\n나이 : %d세\n출생년도 : %d년\n",name,age,year);
+		
+		sc.close();
 	}
 }

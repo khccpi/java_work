@@ -13,10 +13,10 @@ public class IntegerExample {
 		 ex) 1byte = 8bit -> -2^7 ~ 2^7 = -127 ~ 127 -> 전부 255개 (0 포함해라!!) 
 		 */
 		
-		byte a = 127; 			// byte  = 8 bit            -> 
-		short b = 32767;   		// short = 2 byte = 16 bit ->
-		int c = 2147483647;		// int   = 4 byte = 32 bit ->
-		long d = 2147483648L;	// long  = 8 byte = 64 bit -?
+		byte a = 127; 			// byte  = 8 bit           -> -2^7  ~ 2^7  (0 포함)
+		short b = 32767;   		// short = 2 byte = 16 bit -> -2^15 ~ 2^15 (0 포함)
+		int c = 2147483647;		// int   = 4 byte = 32 bit -> -2^31 ~ 2^31 (0 포함)
+		long d = 2147483648L;	// long  = 8 byte = 64 bit -> -2^63 ~ 2^63 (0 포함)
 		
 	}
 }
