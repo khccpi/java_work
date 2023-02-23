@@ -42,7 +42,7 @@ public class WhileExample2 {
 			}
 			a++;
 		}
-		System.out.println("258의 배수의 개수는 : " + b + "개");
+		System.out.println("258의 배수의 개수는 : " + b + " 개");
 		
 		// 1000의 약수의 개수를 구하세요.
 		
@@ -56,6 +56,6 @@ public class WhileExample2 {
 			}
 			c++;
 		}
-		System.out.println("1000의 약수의 개수는 : " + d + "개");
+		System.out.println("1000의 약수의 개수는 : " + d + " 개");
 	}
 }
