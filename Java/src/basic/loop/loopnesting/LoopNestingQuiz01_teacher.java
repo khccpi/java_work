@@ -1,4 +1,4 @@
-package basic.loop;
+package basic.loop.loopnesting;
 
 public class LoopNestingQuiz01_teacher {
 	

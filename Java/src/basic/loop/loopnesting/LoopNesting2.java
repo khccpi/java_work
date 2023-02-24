@@ -1,4 +1,4 @@
-package basic.loop;
+package basic.loop.loopnesting;
 
 import java.util.Scanner;
 
@@ -38,5 +38,6 @@ public class LoopNesting2 {
 		}
 		System.out.println();
 		System.out.println("소수의 개수 : " + count + "개");
+		sc.close();
 	}
 }

@@ -1,4 +1,4 @@
-package basic.loop;
+package basic.loop.for_;
 
 public class ForQuiz01 {
 

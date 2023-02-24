@@ -1,4 +1,4 @@
-package basic.loop;
+package basic.loop.while_;
 
 public class WhileExample1 {
 
