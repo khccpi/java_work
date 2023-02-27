@@ -20,7 +20,8 @@ public class BreakExample1 {
 		   그리고, break 선언 시 label을 함게 선언합니다.
 		 */
 		
-		outer: for(int i=0; i<=2; i++) {
+		outer: 
+			for(int i=0; i<=2; i++) {
 			for(int j=0; j<=1; j++) {
 				if( i==j) {
 					break outer;

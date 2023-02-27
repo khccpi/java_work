@@ -87,9 +87,6 @@ public class SwitchQuiz_teacher {
 		*/
 		
 		sc.close();
-		
-		
-		
 
 	}
 

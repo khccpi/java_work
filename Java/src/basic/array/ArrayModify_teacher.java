@@ -41,18 +41,3 @@ public class ArrayModify_teacher {
 	}
 
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
