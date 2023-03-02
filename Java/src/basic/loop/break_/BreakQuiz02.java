@@ -19,9 +19,9 @@ public class BreakQuiz02 {
 		
 		
 		System.out.println("1부터 100까지의 정수 중 어느 숫자가 선택되었을까요?");
-		int chance = 10;
+		int chance = 7;
 		int wrong = 0;
-		int rn = (int)(Math.random()*100 + 0);
+		int rn = (int)(Math.random()*100 + 1);
 		System.out.printf("(((미리보기 정답 : %d)))\n",rn);
 		Scanner sc = new Scanner(System.in);
 		
@@ -32,8 +32,7 @@ public class BreakQuiz02 {
 			if(answer < 1 || answer > 100) {
 				System.out.println("범위 내의 숫자를 입력하세요!");
 				continue;
-			}
-			if(answer == rn) {
+			} else if(answer == rn) {
 				System.out.printf("정답입니다!\n%d 번 만에 맞추셨네요~",wrong);
 				break;
 			} else {
@@ -42,12 +41,11 @@ public class BreakQuiz02 {
 				} else {
 					System.out.println("UP!!!");
 				}
-				
 				wrong++;
-				
-				if(wrong == 10) {
+								
+				if(wrong == 7) {
 					System.out.printf("정답 기회 모두 소진!\n마저 정답을 맞춰주세요.\n\n");
-				} else if(wrong > 10) {
+				} else if(wrong > 7) {
 					System.out.printf("마저 정답을 맞춰주세요.\n\n");
 				} else {
 					System.out.printf("정답 기회 %d번 남음!\n\n",chance-wrong);

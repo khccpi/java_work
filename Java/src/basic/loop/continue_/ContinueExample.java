@@ -9,7 +9,5 @@ public class ContinueExample {
 			System.out.print(i + " ");
 		}
 		System.out.println("\n반복문 종료!");
-		
 	}
-
 }

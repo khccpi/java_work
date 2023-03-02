@@ -26,8 +26,8 @@ public class BreakQuiz01_teacher {
 			int rn1 = (int) ((Math.random()*100) + 1);
 			int rn2 = (int) ((Math.random()*100) + 1);
 			int num = (int) (Math.random()*2);
-			
 			int correct;
+			
 			if(num == 0) {
 				System.out.printf("%d + %d = ???\n", rn1, rn2);
 				correct = rn1 + rn2;

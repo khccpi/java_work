@@ -11,6 +11,7 @@ public class ForQuiz01 {
 		
 		for(int i=1; i<=19 ; i++) {
 			System.out.printf("%d * %d = %d\n",a,i,(a*i));
+			
 		}
 	}
 }
