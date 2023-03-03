@@ -42,9 +42,6 @@ public class ArrayDeleteQuiz_teacher {
 			
 			System.out.println("삭제 후 정보: " + Arrays.toString(kakao));
 		}
-		
 		sc.close();
-		
 	}
-
 }

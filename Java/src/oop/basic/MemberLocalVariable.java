@@ -13,10 +13,21 @@ package oop.basic;
 */
 
 public class MemberLocalVariable {
-
-	public static void main(String[] args) {
 		
-
+		int a; //멤버 변수. (객체의) 필드라고도 불림.
+		
+		void printNumber(int c) {  // 매개 변수
+			int b; // 지역 변수
+			System.out.println("멤버변수 a : " + a);
+		  //System.out.println("멤버변수 b : " + b); //값을 초기화하지 않으면 변수를 사용할 수 없다.
+			System.out.println("멤버변수 c : " + c);
+			
+		}
+		
+		public static void main(String[] args) {
+			
+			MemberLocalVariable m = new MemberLocalVariable();
+			m.printNumber(4);
 	}
 
 }

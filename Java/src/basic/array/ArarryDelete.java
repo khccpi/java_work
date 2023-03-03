@@ -14,7 +14,7 @@ public class ArarryDelete {
 		
 		//삭제되는 값을 기준으로 뒤에 있는 값을 한칸씩 앞으로 땡기는 작업.
 		//추후에 생성될 새 배열에 값을 그대로 대입하기 편하게 대입하려고 하는 작업.
-		for(int i=3; i<arr.length-1; i++) {
+		for(int i=3; i<arr.length-1; i++) {  // 7을 삭제하기 위한 작업
 			arr[i] = arr[i + 1];
 		}
 		

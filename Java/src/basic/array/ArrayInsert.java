@@ -10,7 +10,8 @@ public class ArrayInsert {
 		Scanner sc = new Scanner(System.in);
 		String[] names = new String[6];
 		
-		for(int i=0;i<names.length; i++) {
+		for(int i=0; i<names.length; i++) {
+			System.out.println("'그만'이라고 치시면 멈춥니다.");
 			System.out.print("이름을 입력하세요 : ");
 			String name = sc.next();
 			

@@ -1,10 +1,13 @@
 package basic;
 
+import java.util.Arrays;
+import java.util.Scanner;
+
 public class test {
 
 	public static void main(String[] args) {
 	
-		//아직 continue랑 for랑 loopnesting랑 while랑 array패키지랑 methodquiz02 남음!!
-		
-	}
+		//array랑 과제랑 method 남았따
+
+		}
 }

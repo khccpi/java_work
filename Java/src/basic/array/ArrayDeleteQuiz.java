@@ -16,9 +16,29 @@ public class ArrayDeleteQuiz {
 		
 		/*
 		 1. 삭제할 친구를 입력받아서 삭제를 진행해 주세요.
-		 
+		*/
+		
+		for(int i=0; i<kakao.length; i++) {
+			if(name.equals(kakao[i])) {
+				for(int j=i; j<kakao.length-1;j++) {
+					kakao[j] = kakao[j+1];
+				}
+			}
+		}
+		
+		String[] temp = new String[kakao.length-1];
+		
+		for(int k=0;k<temp.length;k++) {
+			temp[k] = kakao[k];
+		}
+		kakao = temp;
+		temp = null;
+		
+		System.out.println(Arrays.toString(kakao));
+		
+		/*
 		 2. 입력받은 이름이 없다면 없다고 얘기해 주세요.
-		 */
+		*/
 		
 		sc.close();
 	}
