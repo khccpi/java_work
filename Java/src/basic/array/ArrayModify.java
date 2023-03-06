@@ -22,7 +22,7 @@ public class ArrayModify {
 		String name1 = sc.next();
 		
 		for(int i=0; i<foods.length; i++) {
-			if(name1.equals(foods[i]) ) {
+			if(name1.equals(foods[i])) {
 				System.out.println("탐색 완료!");
 				System.out.println("인덱스 : " + i + "번");
 				break;

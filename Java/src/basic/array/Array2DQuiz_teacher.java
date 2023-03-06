@@ -46,35 +46,9 @@ public class Array2DQuiz_teacher {
 			System.out.printf("%s 평균점수: %.1f점\n"
 					, subName[i], avg);
 		}
-		
-		
 		System.out.println("-----------------------------------");
-		
-		
-		
-		
 		
 		double classAvg = totalAvg / stuName.length;
 		System.out.printf("우리반 평균: %.1f점\n", classAvg);
-		
-		
-		
-
 	}
-
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

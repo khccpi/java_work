@@ -89,6 +89,16 @@ public class EmployeeManager {
 			} else if(menu == 3) { ////// 사원 정보 검색 //////
 				// 입력한 사번에 일치하는 사원의 4가지 정보를 모두 출력하세요.
                 // 입력한 사번이 존재하지 않는다면 "조회하신 사원의 정보가 없습니다."
+				System.out.println("조회할 사원의 사번을 입력하세요.");
+				System.out.print("> ");
+				String userNum = sc.next();
+				
+				for(int i=0; i<userNums.length; i++) {
+					
+				}
+				
+				//for
+				
 			} else if(menu == 4) { ////// 사원 정보 수정 //////
 				// 해당 사번과 일치하는 사원의 나이와 부서를 선택적으로 변경할 수 있도록
                 // 프로그램을 구성하시고, 나이와 부서를 수정하는 코드를 작성하세요.

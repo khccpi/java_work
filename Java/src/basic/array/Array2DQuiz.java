@@ -21,21 +21,34 @@ public class Array2DQuiz {
 		 2. 각 과목의 평균을 소수점 첫째 자리까지 출력해 보세요.
 		 3. 반 평균을 소수점 첫째 자리까지 출력해 보세요. (모든 학생들의 평균을 더해서 학생 수로 나누기)
 		 */
+		int idx = 0;
+		double classTotal = 0;
 		
-		for(int[] arr : score) {
-			int sum = 0;
-			for(int n1 : arr) {
-				System.out.print(n1 + " ");
-				sum +=n1;
+		for(int[] stuTotal : score) {
+			int total = 0;
+			for(int num : stuTotal) {
+				total += num;
 			}
-			//System.out.println(" >> 각 합계 : " + sum + ",  각 평균 : " + sum/3.0);
-			System.out.printf(" >> 각 합계 : %d,  각 평균 : %.1f\n",sum,sum/3.0);
-			
+			double stuAvg = (double)total/subName.length;
+			classTotal += stuAvg;
+			System.out.printf("%s의 평균은 : %.1f\n",stuName[idx],stuAvg);
+			idx++;
+		}
+		double classAvg = classTotal/stuName.length;
+		
+		for(int i=0; i<subName.length; i++) {
+			int total = 0;
+			for(int j=0; j<stuName.length; j++) {
+				total += score[j][i];
+			}
+			double totalAvg = (double)total / stuName.length;  
+			System.out.printf("%s의 평균은 : %.1f\n",subName[i],totalAvg);
 		}
 		
-		int avg = 1;
+		System.out.printf("%.1f",classAvg);
+		
+		
 		
 		
 	}
-
 }
