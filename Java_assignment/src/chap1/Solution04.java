@@ -1,5 +1,7 @@
 package chap1;
 
+import java.util.Scanner;
+
 public class Solution04 {
 
 	public static void main(String[] args) {
@@ -20,6 +22,10 @@ public class Solution04 {
 		   의 형태로 출력합니다.
 		 */
 		
+		Scanner sc = new Scanner(System.in);
+		
+		
+		sc.close();
 	}
 
 }

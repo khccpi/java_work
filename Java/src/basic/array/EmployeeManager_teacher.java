@@ -218,30 +218,8 @@ public class EmployeeManager_teacher {
 				System.out.println("메뉴를 잘못 입력하셨습니다.");
 			}
 			
-			
-		
 		} // end while true
 		
-
 	} // end main
 
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

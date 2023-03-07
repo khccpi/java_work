@@ -1,5 +1,8 @@
 package chap1;
 
+import java.util.Arrays;
+import java.util.Scanner;
+
 public class Solution01 {
 
 	public static void main(String[] args) {
@@ -11,6 +14,19 @@ public class Solution01 {
 		 * ex) 가장 큰 값: 95  의 형태로 출력합니다.
 		 */
 		
+		int[] nums = new int[10]; // 크기 10인 배열 생성
+		Scanner sc = new Scanner(System.in);
+		for(int i=0; i<10; i++) {
+			System.out.printf("%d번째 숫자를 입력하세요.\n",i+1);
+			System.out.print("> ");
+			int num = sc.nextInt();
+			nums[i] = num;
+		}
+		System.out.println("만든 배열값 : " + Arrays.toString(nums));
+		Arrays.sort(nums); // 배열 정렬
+		System.out.println("가장 큰 값 : " + nums[nums.length-1]);
+		
+		sc.close();
 	}
 
 }

@@ -17,9 +17,11 @@ public class ArarryDelete {
 		for(int i=3; i<arr.length-1; i++) {  // 7을 삭제하기 위한 작업
 			arr[i] = arr[i + 1];
 		}
+		System.out.println(Arrays.toString(arr));
 		
 		//기존의 배열보다 크기가 하나 작은 새 배열 생성
 		int[] temp = new int[arr.length -1];
+		System.out.println(Arrays.toString(temp));
 		
 		//원본 배열의 값을 새 배열에 인덱스 맞춰서 그대로 대입하기 
 		//temp[0] = arr[0];
@@ -30,7 +32,6 @@ public class ArarryDelete {
 			temp[j] = arr[j];
 		}
 		
-		System.out.println(Arrays.toString(arr));
 		System.out.println(Arrays.toString(temp));
 		
 		arr = temp; // temp 배열의 주소값을 arr에게 넘긴다.

@@ -1,5 +1,8 @@
 package chap1;
 
+import java.util.Arrays;
+import java.util.Scanner;
+
 public class Solution03 {
 
 	public static void main(String[] args) {
@@ -20,7 +23,29 @@ public class Solution03 {
 		   90		2
 	
 		 */
+		int[] scores = new int[5];
+		Scanner sc = new Scanner(System.in);
 		
+		for(int i=0; i<scores.length; i++) {
+			System.out.printf("%d번째 숫자를 입력하세요.",i+1);
+			System.out.print("> ");
+			int num = sc.nextInt();
+			scores[i] = num;
+		}
+		System.out.println("생성된 배열 : " + Arrays.toString(scores));
+		System.out.println("---------------------------");
+		System.out.printf("점수\t순위\n");
+		System.out.println("------------");
+		for(int i=0; i<scores.length; i++) {
+			int rank = 1; 
+			for(int j=0; j<scores.length; j++) {
+				if(scores[j]>scores[i]) {
+					rank++;
+				}
+			}
+			System.out.printf("%d\t%d\n",scores[i],rank);
+		}
+		sc.close();
 	}
 
 }

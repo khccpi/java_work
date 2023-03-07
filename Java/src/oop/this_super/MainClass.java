@@ -37,6 +37,9 @@ public class MainClass {
 		System.out.println("-------------------------------------------------");
 		Hunter h1 = new Hunter("냥꾼짱짱맨");
 		h1.characterInfo();
+		
+		w1.attack(m1);
+		m1.attack(h1);
+		
 	}
-
 }

@@ -18,6 +18,17 @@ public class Solution02 {
 		   의 형태로 출력합니다.
 		 */
 		
+		int[] nums = {4, 2, 6, 1, 3};
+		
+		for(int i=0; i<nums.length; i++) {
+		 // System.out.println(nums[i]);  // 숫자 뽑아내기~
+			for(int j=0; j<nums[i]; j++) {
+				System.out.print("★");
+			}
+			System.out.println();
+		}
+		
+		
 	}
 
 }
