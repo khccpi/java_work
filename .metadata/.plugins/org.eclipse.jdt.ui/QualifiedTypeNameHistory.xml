@@ -15,6 +15,11 @@
     <fullyQualifiedTypeName name="oop.modi.protec.pac1.A"/>
     <fullyQualifiedTypeName name="java.util.Random"/>
     <fullyQualifiedTypeName name="java.util.Collection"/>
-    <fullyQualifiedTypeName name="java.util.Arrays"/>
     <fullyQualifiedTypeName name="java.util.Scanner"/>
+    <fullyQualifiedTypeName name="java.util.Arrays"/>
+    <fullyQualifiedTypeName name="oop.static_.init.DBManager"/>
+    <fullyQualifiedTypeName name="oop.static_singleton.Singleton"/>
+    <fullyQualifiedTypeName name="oop.abs.bad.SeoulStore"/>
+    <fullyQualifiedTypeName name="oop.abs.good.SeoulStore"/>
+    <fullyQualifiedTypeName name="oop.abs.good.HeadStore"/>
 </qualifiedTypeNameHistroy>

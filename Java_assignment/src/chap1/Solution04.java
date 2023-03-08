@@ -22,10 +22,46 @@ public class Solution04 {
 		   의 형태로 출력합니다.
 		 */
 		
+		int[] stu = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
+		//int[] hw = new int[8];
 		Scanner sc = new Scanner(System.in);
 		
+		while(true) {
 		
+			//boolean flag = false;
+			System.out.println("숙제를 낸 학생의 번호: ");
+			System.out.print("> ");
+			int num = sc.nextInt();
+			
+			
+			for(int i=0; i<stu.length; i++) {
+				if(num ==stu[i]) {
+					for(int j=i; j<stu.length-1; j++) {
+						stu[j] = stu[j+1];
+					}
+				}
+			}
+			//System.out.println(Arrays.toString(stu));
+			
+			int[] temp = new int[stu.length-1];
+		
+			for(int j=0; j<temp.length; j++) {
+				temp[j] = stu[j];
+			}
+	 	  //System.out.println(Arrays.toString(temp));
+		
+			stu = temp;		
+	      //System.out.println("a" + Arrays.toString(stu));
+		
+			if(stu.length == 2) {
+				break;
+			}
+		}
+		System.out.println("------------------------------------");
+		System.out.println("숙제를 안 낸 학생의 번호 : ");
+		for(int k=0; k<stu.length; k++) {
+			System.out.println(stu[k]);
+		}
 		sc.close();
 	}
-
 }

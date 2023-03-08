@@ -8,8 +8,8 @@ public class test {
 
 	public static void main(String[] args) {
 	
-		//과제랑 methodQuiz2만 남았따
-		
+		//불렛이랑 methodQuiz2만 남았따
+	
 		Random random = new Random();
 		boolean[] bullet = new boolean[5];
 		
