@@ -26,24 +26,4 @@ public class Calculator {
 	public double areaCircle(int r) {
 		return r * r * pi;
 	}
-	
-	
-
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

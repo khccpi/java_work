@@ -1,7 +1,6 @@
 package basic.array;
 
 import java.util.Arrays;
-import java.util.Random;
 import java.util.Scanner;
 
 public class RussianRoulette {
@@ -33,7 +32,7 @@ public class RussianRoulette {
 			if(bullet < 1 || bullet > 6) {
 				System.out.println("실탄 갯수가 올바르지 않습니다. 게임을 종료합니다.");
 			} else {
-				boolean[] lucks = new boolean[6];		// 실탄 배열 생성~!!!!  배열은 생성 했으나 아직 총알랜덤으로 구하는거 못함
+				boolean[] lucks = new boolean[6];		// 실탄 배열 생성~!!!!  배열은 생성 했으나 아직 총알랜덤으로 구하는거 못함 -->> 했음
 				int bulletNum = 0;
 				while(bulletNum < bullet) {
 					int bul = (int)(Math.random()*lucks.length);
@@ -43,7 +42,7 @@ public class RussianRoulette {
 						lucks[bul] = true;
 						bulletNum++;
 					}
-				}											// 실탄 장전 완료. boolean의 배열은 기본이 false~~!!
+				}										// 실탄 장전 완료. boolean의 배열은 기본이 false~~!!
 				System.out.printf("장전상태 미리 보기 : %s\n",Arrays.toString(lucks));
 				System.out.printf("%d명 참가하셨고 실탄 개수는 %d발 입니다.\n",player,bullet);
 				System.out.println("참가자 이름을 등록하겠습니다.");
@@ -54,22 +53,21 @@ public class RussianRoulette {
 					String name = sc.next();
 					players[i] = name;
 				}
-				int ran = (int)(Math.random()*players.length);
+				int ran = (int)(Math.random()*player);
 				System.out.printf("참여자는 총 %d 명이며, 이름은 %s입니다. %s부터 시작합니다.\n",player,Arrays.toString(players),players[ran]); 			// 게임 준비 완료
-				
+				sc.nextLine();
 				int shot = 0;
 				
 				while(true) {
 					System.out.println("엔터를 누르면 총을 쏩니다.");
-					String ready = sc.nextLine();
-					String ready2 = sc.nextLine();
+					sc.nextLine();
 					if(lucks[shot]) {
-						System.out.println("탕!! 사망");
+						System.out.printf("탕!! 사망\n");
 						lucks[shot]=false;
 						bulletNum--;
 						player--;
 						
-						for(int k=0; k<players.length-1; k++) {
+						for(int k=ran; k<players.length-1; k++) {
 							players[k] = players[k+1];
 						}
 						String[] temp = new String[players.length-1];
@@ -78,8 +76,28 @@ public class RussianRoulette {
 						}
 						players = temp;
 						System.out.printf("남은 인원 : %s  남은 총알 : %s\n",Arrays.toString(players),bulletNum);
+						//System.out.printf("남은 인원으로 다시 시작합니다. %s부터 시작합니다.\n",players[ran]);	
+						
+						if(players.length==1 || bulletNum == 0) {
+							System.out.printf("생존자는 %s입니다. 게임을 종료합니다.",Arrays.toString(players));
+							break;
+						}
 					} else {
 						System.out.println("아무 일도 일어나지 않았습니다.");
+						ran++;
+						//System.out.printf("남은 인원 : %s  남은 총알 : %s\n",Arrays.toString(players),bulletNum);
+						/*
+						String first = players[0];
+						for(int k=0; k<players.length-1; k++) {
+							players[k] = players[k+1];
+						}
+						String[] temp = new String[players.length];
+						for(int j=0; j<temp.length; j++) {
+							temp[j] = players[j];
+						}
+						players = temp;
+						players[players.length-1] = first;
+						*/
 					}
 					shot++;
 				}
