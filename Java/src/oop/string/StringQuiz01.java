@@ -18,11 +18,10 @@ public class StringQuiz01 {
 		outer:while(true) {
 			System.out.println("id를 입력하세요");
 			System.out.print("> ");
-			String name = sc.nextLine();
-			String name2 = name.replace(" ","");
-			System.out.println("name2 : " + name2);
+			String name = sc.nextLine().replace(" ","");
+			System.out.println("id : " + name);
 			
-			if(name2.length() < 5) {
+			if(name.length() < 5) {
 				System.out.println("id가 5글자 미만이니 다시 입력하세요.");
 				continue outer;
 			} else {
@@ -30,5 +29,6 @@ public class StringQuiz01 {
 				break;
 			}
 		}
+		sc.close();
 	}
 }

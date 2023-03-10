@@ -13,9 +13,9 @@ public class StringMethod {
 		System.out.println("4번 인덱스 : " + c);
 		
 		System.out.println("------------------------------------------------------");
+		
 		// substring(begin, end) : 문자열의 범위를 지정해서 추출
 		// substring(begin) : begin부터 추출
-		
 		String ss1 = str.substring(1,5); // 1번 이상 5번 미만
 		System.out.println("ss1 : " + ss1);
 		
@@ -23,11 +23,13 @@ public class StringMethod {
 		System.out.println("ss2 : " + ss2);
 				
 		System.out.println("------------------------------------------------------");
+		
 		// length() : 문자열의 총 길이를 반환
 		int len = str.length();
 		System.out.println("len : " + len);
 		
 		System.out.println("------------------------------------------------------");
+		
 		// indexOf(str) : 해당 문자가 있는 인덱스를 반환
 		// 			      해당 문자가 존재하지 않으면 -1을 리턴
 		
@@ -46,10 +48,11 @@ public class StringMethod {
 		String str2 = "HeLLo WoRLd";
 		String lower = str2.toLowerCase();  // 일괄 소문자 변경
 		System.out.println(lower);
-		String upper = str2.toUpperCase();  // 일괄 데문자 변경
+		String upper = str2.toUpperCase();  // 일괄 대문자 변경
 		System.out.println(upper);
 		
 		System.out.println("------------------------------------------------------");
+		
 		// trim() : 문자열의 앞, 뒤 공백을 제거
 		
 		String name = "              홍길동            ";
@@ -57,10 +60,13 @@ public class StringMethod {
 		System.out.println(name.trim() + "님 안녕하세요~!");
 		
 		System.out.println("------------------------------------------------------");
+		
 		// replace(old, new) : 기존 문자열 내부의 old 값을 모두 찾아서 new 문자열로 일괄 변경해줌
 		String java = "자바는 재밌습니다. 자바 커피는 맛있습니다.";
 		System.out.println(java.replace("자바", "Java"));
 		System.out.println(java.replace("습니", ""));
+		
+		System.out.println("------------------------------------------------------");
 		
 		// split : 문자열을 구분자로 구분하여 분할.
 		//		   분할된 문자들은 String 배열에 담아서 리턴.
@@ -73,6 +79,7 @@ public class StringMethod {
 		System.out.println(Arrays.toString(pets));
 
 		System.out.println("------------------------------------------------------");
+		
 		// 문자열의 정수/실수 변환
 		String s1 = "100";
 		String s2 = "3.14";
@@ -82,6 +89,7 @@ public class StringMethod {
 		System.out.println(i + d);
 		
 		System.out.println("------------------------------------------------------");
+		
 		// valueOf : 기본 타입을 문자열로 변경
 		System.out.println(3 + 4);  // 7
 		System.out.println(String.valueOf(3) + String.valueOf(4));  // 34
